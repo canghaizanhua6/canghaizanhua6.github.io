@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://canghaizanhua6.github.io/"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/vendors/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/vendors/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "c32af648"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo3.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="2019笔试真题," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="poppy" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作     被3整除     安置路灯     迷路的牛牛     数对     矩形重叠     牛牛的闹钟     背包问题     俄罗斯方块     瞌睡     丰收     整理房间     表达式求值     塔     小易的字典     代价     访友     翻转翻转     买房     香槟塔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="公司笔试真题">
+<meta property="og:url" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/index.html">
+<meta property="og:site_name" content="poppy">
+<meta property="og:description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作     被3整除     安置路灯     迷路的牛牛     数对     矩形重叠     牛牛的闹钟     背包问题     俄罗斯方块     瞌睡     丰收     整理房间     表达式求值     塔     小易的字典     代价     访友     翻转翻转     买房     香槟塔">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%934.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%935.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%936.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%937.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%938.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%939.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9310.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9311.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9312.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9313.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9314.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9315.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9316.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9317.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9318.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9319.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9320.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9321.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9322.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9323.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9324.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9325.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9326.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9327.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9328.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9329.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A21.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A22.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A23.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A24.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A25.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A26.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A27.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%821.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%822.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%823.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%824.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%825.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%826.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%827.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF1.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF2.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF3.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF4.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF5.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF6.jpg">
+<meta property="article:published_time" content="2020-05-01T06:03:27.000Z">
+<meta property="article:modified_time" content="2020-05-01T07:40:59.432Z">
+<meta property="article:author" content="yang qian">
+<meta property="article:tag" content="2019笔试真题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'poppy'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://canghaizanhua6.github.io/2020/05/01/公司笔试真题/"/>
+
+
+
+
+
+  <title>公司笔试真题 | poppy</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?27d543fbbb1cd5efcafce20d63aa0b03";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  
+  <script type="text/javascript"
+  color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/canghaizanhua6" target="_blank" rel="noopener">
+    <img style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/>
+    </a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">poppy</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">人生如逆旅，我亦是行人</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yang qian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="poppy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">公司笔试真题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-01T14:03:27+08:00">
+                2020-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categoriespsot_asset_folder/%E7%AC%94%E8%AF%95%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index">
+                    <span itemprop="name">笔试相关</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/" class="leancloud_visitors" data-flag-title="公司笔试真题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  223
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<table>
+<thead>
+<tr>
+<th align="center">题目描述</th>
+<th align="left">链接</th>
+<th align="right">分类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">公司</td>
+<td align="left">网易</td>
+<td align="right">2019年</td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg" alt="1"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/46e837a4ea9144f5ad2021658cb54c4d?tpId=98&tqId=32824&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">牛牛找工作</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg" alt="2"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/3a3577b9d3294fb7845b96a9cd2e099c?tpId=98&tqId=32826&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">被3整除</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg" alt="3"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/3a3577b9d3294fb7845b96a9cd2e099c?tpId=98&tqId=32826&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">安置路灯</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%934.jpg" alt="4"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/fc72d3493d7e4be883e931d507352a4a?tpId=98&tqId=32827&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">迷路的牛牛</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%935.jpg" alt="5"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/bac5a2372e204b2ab04cc437db76dc4f?tpId=98&tqId=32828&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">数对</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%936.jpg" alt="6"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/a22dd98b3d224f2bb89142f8acc2fe57?tpId=98&tqId=32829&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">矩形重叠</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%937.jpg" alt="7"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/9173e83d1774462f81255a26feafd7c6?tpId=98&tqId=32830&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">牛牛的闹钟</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%938.jpg" alt="8"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/bf877f837467488692be703735db84e6?tpId=98&tqId=32831&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">背包问题</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%939.jpg" alt="9"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/9407e24a70b04fedba4ab3bd3ae29704?tpId=98&tqId=32832&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">俄罗斯方块</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9310.jpg" alt="10"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/93f2c11daeaf45959bb47e7894047085?tpId=98&tqId=32833&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">瞌睡</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9311.jpg" alt="11"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/83b419c027fa490aa60669b0e7dc06a3?tpId=98&tqId=32834&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">丰收</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9312.jpg" alt="12"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/c32f4c74446541a1ad2abbe54476681f?tpId=98&tqId=32835&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">整理房间</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9313.jpg" alt="13"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/3e483fe3c0bb447bb17ffb3eeeca78ba?tpId=98&tqId=32836&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">表达式求值</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9314.jpg" alt="14"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=98&tqId=32837&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">塔</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9315.jpg" alt="15"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/12b1b8ef17e1441f86f322b250bff4c0?tpId=98&tqId=32838&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">小易的字典</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9316.jpg" alt="16"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/b7985769dc434d85a16717908669bcab?tpId=98&tqId=32967&tPage=8&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">代价</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9317.jpg" alt="17"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/b8e21f5816874425836b7d32011f46b0?tpId=98&tqId=32968&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">访友</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9318.jpg" alt="18"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/ad11db28e0f44a1c97af06fd002477a1?tpId=98&tqId=32969&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">翻转翻转</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9319.jpg" alt="19"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/edf9346066f047a9833b3284798d6c29?tpId=98&tqId=32970&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">买房</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9320.jpg" alt="20"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/d4f843fc299a493ca9dbd76122a0a3d3?tpId=98&tqId=32971&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">香槟塔</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9321.jpg" alt="21"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/b8847dfb40964fa3aaaef6d2333938e4?tpId=98&tqId=32972&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">社团主席选举</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9322.jpg" alt="22"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/0277b16d84ae42888b0c80fe4e316968?tpId=98&tqId=32973&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">橡皮泥斑马</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9323.jpg" alt="23"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/100cf29316344bfe95daaf25afbee5ee?tpId=98&tqId=32974&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">篮球队</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9324.jpg" alt="24"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/100cf29316344bfe95daaf25afbee5ee?tpId=98&tqId=32974&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">字幕卡片</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9325.jpg" alt="25"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/7492dceb022a4bbebb990695c107823e?tpId=98&tqId=32976&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">相等序列</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9326.jpg" alt="26"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/97142035f7d2443c91a3ffc343ad691d?tpId=98&tqId=32977&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">N-GCD</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9327.jpg" alt="27"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/9b59014cc1544aeeb4082f5f37ecfaea?tpId=98&tqId=32978&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">分贝壳</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9328.jpg" alt="28"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=98&tqId=32979&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">美妙的约会</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9329.jpg" alt="29"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/34dc8aef8295470ea536f1c9255fef7e?tpId=98&tqId=32980&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">数模求和</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">公司</td>
+<td align="left">美团</td>
+<td align="right">2019</td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A21.jpg" alt="1"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/5427af99168b45f4a14aec195b28a839?tpId=98&tqId=32999&tPage=9&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">图的遍历</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A22.jpg" alt="2"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/744eb5eb60c044e1b05e4dfb5f578dbe?tpId=98&tqId=33000&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">最长全1串</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A23.jpg" alt="3"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/95329d9a55b94e3fb2da475d3d052164?tpId=98&tqId=33001&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">外卖满减</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A24.jpg" alt="4"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/95329d9a55b94e3fb2da475d3d052164?tpId=98&tqId=33001&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">种花</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A25.jpg" alt="5"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/a1792d443f914f2b928d2a157cd7900d?tpId=98&tqId=33003&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">考试策略</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A26.jpg" alt="6"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/a1792d443f914f2b928d2a157cd7900d?tpId=98&tqId=33003&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">路由器</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A27.jpg" alt="7"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/fa795cf403f140eabaa023f28318a9b3?tpId=98&tqId=33005&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">D塔2</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">公司</td>
+<td align="left">字节</td>
+<td align="right">2019</td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%821.jpg" alt="1"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/42852fd7045c442192fa89404ab42e92?tpId=98&tqId=33006&tPage=10&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">聪明的编辑</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%822.jpg" alt="2"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/c0803540c94848baac03096745b55b9b?tpId=98&tqId=33007&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">抓捕孔连顺</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%823.jpg" alt="3"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/448127caa21e462f9c9755589a8f2416?tpId=98&tqId=33008&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">雀魂启动</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%824.jpg" alt="4"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/5afcf93c419a4aa793e9b325d01957e2?tpId=98&tqId=33009&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">特征提取</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%825.jpg" alt="5"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/3d1adf0f16474c90b27a9954b71d125d?tpId=98&tqId=33010&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">毕业旅行问题</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%826.jpg" alt="6"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/944e5ca0ea88471fbfa73061ebe95728?tpId=98&tqId=33011&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">找零</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%827.jpg" alt="7"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/7037a3d57bbd4336856b8e16a9cafd71?tpId=98&tqId=33012&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">机器人跳跃问题</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">公司</td>
+<td align="left">腾讯</td>
+<td align="right">2018</td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF1.jpg" alt="1"></td>
+<td align="left"><a href="https://www.nowcoder.com/test/question/cc0a71a1dfdb4c64a3ffe000f71ae12c?pid=10611931&tid=33128212" target="_blank" rel="noopener">翻转数列</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF2.jpg" alt="2"></td>
+<td align="left"><a href="https://www.nowcoder.com/question/next?pid=10611931&qid=161631&tid=33128212" target="_blank" rel="noopener">纸牌游戏</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF3.jpg" alt="3"></td>
+<td align="left"><a href="https://www.nowcoder.com/question/next?pid=10611931&qid=161632&tid=33128212" target="_blank" rel="noopener">贪吃的小Q</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF4.jpg" alt="4"></td>
+<td align="left"><a href="https://www.nowcoder.com/question/next?pid=10611931&qid=161633&tid=33128212" target="_blank" rel="noopener">小Q的歌单</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF5.jpg" alt="5"></td>
+<td align="left"><a href="https://www.nowcoder.com/question/next?pid=10611931&qid=161634&tid=33128212" target="_blank" rel="noopener">安排机器</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF6.jpg" alt="6"></td>
+<td align="left"><a href="https://www.nowcoder.com/question/next?pid=10611931&qid=161635&tid=33128212" target="_blank" rel="noopener">画家小Q</a></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="center">公司</td>
+<td align="left">阿里</td>
+<td align="right">2017</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">--------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读--------</div>
+    
+</div>
+
+      
+    </div>
+
+    <div>
+        
+            
+
+
+        
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    yang qian
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://canghaizanhua6.github.io/2020/05/01/公司笔试真题/" title="公司笔试真题">http://canghaizanhua6.github.io/2020/05/01/公司笔试真题/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/2019%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> 2019笔试真题</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/04/29/2019%E7%A7%8B%E6%8B%9B%E6%97%B6%E9%97%B4%E8%A1%A8/" rel="next" title="2019秋招时间表">
+                <i class="fa fa-chevron-left"></i> 2019秋招时间表
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/05/01/%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/" rel="prev" title="笔试真题">
+                笔试真题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80OTg1NS8yNjM0Ng"></div>
+    </div>
+
+  
+
+
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/%E5%A4%B4%E5%83%8F.jpg"
+                alt="yang qian" />
+            
+              <p class="site-author-name" itemprop="name">yang qian</p>
+              <p class="site-description motion-element" itemprop="description">愿你在冷铁卷刃前  得以窥见天光</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/canghaizanhua6/" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/canghaichanghua/" target="_blank" title="csdn">
+                      
+                        <i class="fa fa-fw fa-crosshairs"></i>csdn</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-star">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">true</span>
+
+  
+</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+-->
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共 2k 字</span>
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("UDyIQm6LMgRJA3JUHSEyevtr-gzGzoHsz#<app_id>", "rFj4ymUjblvTIyD2QF9UjSyN#<app_key>");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+    <script src="/js/cursor/fireworks.js"></script>
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":120,"height":240},"mobile":{"show":true},"react":{"opacityDefault":1,"opacityOnHover":1},"log":false,"tagMode":false});</script></body>
+</html>
+
