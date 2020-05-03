@@ -134,12 +134,12 @@
 
 
 
-<meta name="description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 暴力，双排序，hash表    被3整除 数学    安置路灯 贪心，滑动窗口    迷路的牛牛 数学    数对 数学    矩形重叠 数学，线段树    牛牛的闹钟 排序+二分    背包问题 动态规划，回溯(中途相遇法)    俄罗斯方块 数组    瞌睡 滑动窗口    丰收 数组+二分查找    整理房间 枚举">
+<meta name="description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 排序，贪心    被3整除 数学    安置路灯 数组，字符串，贪心，滑动窗口    迷路的牛牛 字符串    数对 数学    矩形重叠 数学，穷举    牛牛的闹钟 排序+二分    背包问题 动态规划，穷举    俄罗斯方块 数组，贪心    瞌睡 数组，贪心，数学，滑动窗口    丰收 数组+二分查找    整理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="公司笔试真题">
 <meta property="og:url" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/index.html">
 <meta property="og:site_name" content="poppy">
-<meta property="og:description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 暴力，双排序，hash表    被3整除 数学    安置路灯 贪心，滑动窗口    迷路的牛牛 数学    数对 数学    矩形重叠 数学，线段树    牛牛的闹钟 排序+二分    背包问题 动态规划，回溯(中途相遇法)    俄罗斯方块 数组    瞌睡 滑动窗口    丰收 数组+二分查找    整理房间 枚举">
+<meta property="og:description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 排序，贪心    被3整除 数学    安置路灯 数组，字符串，贪心，滑动窗口    迷路的牛牛 字符串    数对 数学    矩形重叠 数学，穷举    牛牛的闹钟 排序+二分    背包问题 动态规划，穷举    俄罗斯方块 数组，贪心    瞌睡 数组，贪心，数学，滑动窗口    丰收 数组+二分查找    整理">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg">
@@ -186,7 +186,6 @@
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A14.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A15.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A16.jpg">
-<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A17.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A21.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A22.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A23.jpg">
@@ -242,7 +241,7 @@
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BE%AE%E4%BC%972.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BE%AE%E4%BC%973.jpg">
 <meta property="article:published_time" content="2020-05-01T06:03:27.000Z">
-<meta property="article:modified_time" content="2020-05-03T08:11:16.162Z">
+<meta property="article:modified_time" content="2020-05-03T09:11:40.608Z">
 <meta property="article:author" content="yang qian">
 <meta property="article:tag" content="2019笔试真题">
 <meta name="twitter:card" content="summary">
@@ -573,7 +572,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  558
+                  856
                 </span>
               
 
@@ -589,7 +588,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -627,7 +626,7 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/46e837a4ea9144f5ad2021658cb54c4d?tpId=98&tqId=32824&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">牛牛找工作</a></td>
-<td align="right">暴力，双排序，hash表</td>
+<td align="right">排序，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg" alt="2"></td>
@@ -637,12 +636,12 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/3a3577b9d3294fb7845b96a9cd2e099c?tpId=98&tqId=32826&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">安置路灯</a></td>
-<td align="right">贪心，滑动窗口</td>
+<td align="right">数组，字符串，贪心，滑动窗口</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%934.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/fc72d3493d7e4be883e931d507352a4a?tpId=98&tqId=32827&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">迷路的牛牛</a></td>
-<td align="right">数学</td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%935.jpg" alt="5"></td>
@@ -652,7 +651,7 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%936.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/a22dd98b3d224f2bb89142f8acc2fe57?tpId=98&tqId=32829&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">矩形重叠</a></td>
-<td align="right">数学，线段树</td>
+<td align="right">数学，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%937.jpg" alt="7"></td>
@@ -662,17 +661,17 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%938.jpg" alt="8"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/bf877f837467488692be703735db84e6?tpId=98&tqId=32831&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">背包问题</a></td>
-<td align="right">动态规划，回溯(中途相遇法)</td>
+<td align="right">动态规划，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%939.jpg" alt="9"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/9407e24a70b04fedba4ab3bd3ae29704?tpId=98&tqId=32832&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">俄罗斯方块</a></td>
-<td align="right">数组</td>
+<td align="right">数组，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9310.jpg" alt="10"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/93f2c11daeaf45959bb47e7894047085?tpId=98&tqId=32833&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">瞌睡</a></td>
-<td align="right">滑动窗口</td>
+<td align="right">数组，贪心，数学，滑动窗口</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9311.jpg" alt="11"></td>
@@ -682,7 +681,7 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9312.jpg" alt="12"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/c32f4c74446541a1ad2abbe54476681f?tpId=98&tqId=32835&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">整理房间</a></td>
-<td align="right">枚举+数学</td>
+<td align="right">穷举+数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9313.jpg" alt="13"></td>
@@ -692,7 +691,7 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9314.jpg" alt="14"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=98&tqId=32837&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">塔</a></td>
-<td align="right">排序</td>
+<td align="right">贪心，排序</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9315.jpg" alt="15"></td>
@@ -702,27 +701,27 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9330.jpg" alt="30"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/72f3cc4658024d12bcc122c29b35394e?tpId=98&tqId=32890&tPage=4&rp=4&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">时钟</a></td>
-<td align="right">数学</td>
+<td align="right">数学，字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9331.jpg" alt="31"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/0f52adb3946249f9bb63d964658b2691?tpId=98&tqId=32891&rp=4&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">会话列表</a></td>
-<td align="right"></td>
+<td align="right">栈</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9332.jpg" alt="32"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/8fb1e165abcb4b709d5a2f0ba759d0a6?tpId=98&tqId=32892&rp=4&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">字符迷阵</a></td>
-<td align="right">dfs</td>
+<td align="right">字符串，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9333.jpg" alt="33"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/d7764905e41a413c98900e22a9cc4ec3?tpId=98&tqId=32893&rp=4&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">一封奇怪的信</a></td>
-<td align="right">哈希表+数学</td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9334.jpg" alt="34"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/8ff3e3a14ea04c6bb3a60e2e457dafb1?tpId=98&tqId=32894&rp=4&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">糖果谜题</a></td>
-<td align="right">字符串</td>
+<td align="right">数学，贪心，hash</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -732,12 +731,12 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9316.jpg" alt="16"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/b7985769dc434d85a16717908669bcab?tpId=98&tqId=32967&tPage=8&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">代价</a></td>
-<td align="right"></td>
+<td align="right">排序，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9317.jpg" alt="17"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/b8e21f5816874425836b7d32011f46b0?tpId=98&tqId=32968&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">访友</a></td>
-<td align="right"></td>
+<td align="right">数学，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9318.jpg" alt="18"></td>
@@ -747,57 +746,57 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9319.jpg" alt="19"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/edf9346066f047a9833b3284798d6c29?tpId=98&tqId=32970&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">买房</a></td>
-<td align="right"></td>
+<td align="right">数学，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9320.jpg" alt="20"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/d4f843fc299a493ca9dbd76122a0a3d3?tpId=98&tqId=32971&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">香槟塔</a></td>
-<td align="right"></td>
+<td align="right">数组，线段树</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9321.jpg" alt="21"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/b8847dfb40964fa3aaaef6d2333938e4?tpId=98&tqId=32972&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">社团主席选举</a></td>
-<td align="right"></td>
+<td align="right">穷举，排序，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9322.jpg" alt="22"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/0277b16d84ae42888b0c80fe4e316968?tpId=98&tqId=32973&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">橡皮泥斑马</a></td>
-<td align="right"></td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9323.jpg" alt="23"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/100cf29316344bfe95daaf25afbee5ee?tpId=98&tqId=32974&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">篮球队</a></td>
-<td align="right"></td>
+<td align="right">穷举，递归，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9324.jpg" alt="24"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/100cf29316344bfe95daaf25afbee5ee?tpId=98&tqId=32974&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">字母卡片</a></td>
-<td align="right"></td>
+<td align="right">排序，贪心，字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9325.jpg" alt="25"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/7492dceb022a4bbebb990695c107823e?tpId=98&tqId=32976&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">相等序列</a></td>
-<td align="right"></td>
+<td align="right">贪心，排序，数组，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9326.jpg" alt="26"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/97142035f7d2443c91a3ffc343ad691d?tpId=98&tqId=32977&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">N-GCD</a></td>
-<td align="right"></td>
+<td align="right">动态规划，数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9327.jpg" alt="27"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/9b59014cc1544aeeb4082f5f37ecfaea?tpId=98&tqId=32978&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">分贝壳</a></td>
-<td align="right"></td>
+<td align="right">数学，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9328.jpg" alt="28"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/cc3eef5aed91489f9b706f4196e0d5c6?tpId=98&tqId=32979&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">美妙的约会</a></td>
-<td align="right"></td>
+<td align="right">排序，贪心，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9329.jpg" alt="29"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/34dc8aef8295470ea536f1c9255fef7e?tpId=98&tqId=32980&rp=8&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">数模求和</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -822,22 +821,22 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%8B%BC%E5%A4%9A%E5%A4%9A1.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/005af31a10834b3688911463065ab47d?tpId=98&tqId=32963&tPage=7&rp=7&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">选靓号</a></td>
-<td align="right"></td>
+<td align="right">贪心，字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%8B%BC%E5%A4%9A%E5%A4%9A2.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/52f25c8a8d414f8f8fe46d4e62ef732c?tpId=98&tqId=32964&rp=7&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">种树</a></td>
-<td align="right"></td>
+<td align="right">贪心，数组，递归</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%8B%BC%E5%A4%9A%E5%A4%9A3.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/60594521f1db4d75ad78266b0b35cfbb?tpId=98&tqId=32965&rp=7&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">两两配对差值最小</a></td>
-<td align="right"></td>
+<td align="right">排序，贪心,数组</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%8B%BC%E5%A4%9A%E5%A4%9A4.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/17a083854661490e85e5bb6c4b26e546?tpId=98&tqId=32966&rp=7&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">回合制游戏</a></td>
-<td align="right"></td>
+<td align="right">数学，查找，贪心</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -847,37 +846,32 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A11.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/78f4c4bbd759422e9f4e33d7dada347b?tpId=98&tqId=33039&tPage=11&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">小游戏</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A12.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/bade66d32ad8479fbcecc002ea983ff0?tpId=98&tqId=33040&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">火车站台</a></td>
-<td align="right"></td>
+<td align="right">数组，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A13.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/dfb7f50ab15d479aafdb36ea934854cc?tpId=98&tqId=33041&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">链式边权</a></td>
-<td align="right"></td>
+<td align="right">数组，查找，分治，数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A14.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/ce9d7cdac6e34e42919e787a8baf8a2b?tpId=98&tqId=33042&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">商品交易</a></td>
-<td align="right"></td>
+<td align="right">数组，动态规划，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A15.jpg" alt="5"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/b1b9a88d8e3946e993232e2525f6a11c?tpId=98&tqId=33043&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">数字的情绪</a></td>
-<td align="right"></td>
+<td align="right">穷举，数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A16.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/f409e49e3f3e4b68819ffceb50df7df5?tpId=98&tqId=33044&rp=11&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">字符串替换</a></td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%BA%A6%E5%B0%8F%E6%BB%A17.jpg" alt="7"></td>
-<td align="left"><a href="https://www.nowcoder.com/practice/1664fe871878496aa600b6e09557982b?tpId=98&tqId=33045&tPage=12&rp=12&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">找出重复数字</a></td>
-<td align="right"></td>
+<td align="right">字符串，动态规划</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -887,37 +881,37 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A21.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/5427af99168b45f4a14aec195b28a839?tpId=98&tqId=32999&tPage=9&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">图的遍历</a></td>
-<td align="right"></td>
+<td align="right">图，树，递归，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A22.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/744eb5eb60c044e1b05e4dfb5f578dbe?tpId=98&tqId=33000&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">最长全1串</a></td>
-<td align="right"></td>
+<td align="right">数组，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A23.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/95329d9a55b94e3fb2da475d3d052164?tpId=98&tqId=33001&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">外卖满减</a></td>
-<td align="right"></td>
+<td align="right">动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A24.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/95329d9a55b94e3fb2da475d3d052164?tpId=98&tqId=33001&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">种花</a></td>
-<td align="right"></td>
+<td align="right">数组，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A25.jpg" alt="5"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/a1792d443f914f2b928d2a157cd7900d?tpId=98&tqId=33003&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">考试策略</a></td>
-<td align="right"></td>
+<td align="right">动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A26.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/a1792d443f914f2b928d2a157cd7900d?tpId=98&tqId=33003&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">路由器</a></td>
-<td align="right"></td>
+<td align="right">数组，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BE%8E%E5%9B%A27.jpg" alt="7"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/fa795cf403f140eabaa023f28318a9b3?tpId=98&tqId=33005&rp=9&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">D塔2</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -927,37 +921,37 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%821.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/42852fd7045c442192fa89404ab42e92?tpId=98&tqId=33006&tPage=10&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">聪明的编辑</a></td>
-<td align="right"></td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%822.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/c0803540c94848baac03096745b55b9b?tpId=98&tqId=33007&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">抓捕孔连顺</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%823.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/448127caa21e462f9c9755589a8f2416?tpId=98&tqId=33008&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">雀魂启动</a></td>
-<td align="right"></td>
+<td align="right">动态规划，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%824.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/5afcf93c419a4aa793e9b325d01957e2?tpId=98&tqId=33009&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">特征提取</a></td>
-<td align="right"></td>
+<td align="right">数组，查找，hash</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%825.jpg" alt="5"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/3d1adf0f16474c90b27a9954b71d125d?tpId=98&tqId=33010&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">毕业旅行问题</a></td>
-<td align="right"></td>
+<td align="right">队列，动态规划，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%826.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/944e5ca0ea88471fbfa73061ebe95728?tpId=98&tqId=33011&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">找零</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%827.jpg" alt="7"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/7037a3d57bbd4336856b8e16a9cafd71?tpId=98&tqId=33012&rp=10&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">机器人跳跃问题</a></td>
-<td align="right"></td>
+<td align="right">查找</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -1027,62 +1021,62 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%828.jpg" alt="8"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/58b04ed2865f4ff4921290f1bd4ee486?tpId=90&tqId=30811&tPage=2&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">附加题</a></td>
-<td align="right"></td>
+<td align="right">动态规划，数组</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%829.jpg" alt="9"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/ff518f3162c849b9a84d1fab8e7179be?tpId=90&tqId=30812&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题1</a></td>
-<td align="right"></td>
+<td align="right">数学，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8210.jpg" alt="10"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/dcc301bc11a7420b88afdbd272299809?tpId=90&tqId=30813&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题2</a></td>
-<td align="right"></td>
+<td align="right">字符串，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8211.jpg" alt="11"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/9bbc4115e48b45239d6dcd2bf45f6926?tpId=90&tqId=30814&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">附加题</a></td>
-<td align="right"></td>
+<td align="right">递归，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8212.jpg" alt="12"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/d66a7a8b8e8a4acca7b1e1c8ef476354?tpId=90&tqId=30815&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题1</a></td>
-<td align="right"></td>
+<td align="right">dfs</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8213.jpg" alt="13"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/43068a1013b4417a85c2c2ce8b18159e?tpId=90&tqId=30816&rp=2&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题2</a></td>
-<td align="right"></td>
+<td align="right">递归，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8214.jpg" alt="14"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/8da0ea4b4853464795f5c32634a1b06f?tpId=90&tqId=30817&tPage=3&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">字母交换</a></td>
-<td align="right"></td>
+<td align="right">字符串，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8215.jpg" alt="15"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/d25162386a3140cbbe6dc071e1eb6ed6?tpId=90&tqId=30818&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">用户喜好</a></td>
-<td align="right"></td>
+<td align="right">hash，数组，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8216.jpg" alt="16"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/0bb1fad52f474bdaa4d7636ca3a98244?tpId=90&tqId=30819&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">手串</a></td>
-<td align="right"></td>
+<td align="right">hash，字符串，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8217.jpg" alt="17"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/f76b7bc64e554edaa53d8e0d84f921c5?tpId=90&tqId=30820&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题3</a></td>
-<td align="right"></td>
+<td align="right">数组，排序</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8218.jpg" alt="18"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/ea209d6014c44763a41ee04a11bf2ef1?tpId=90&tqId=30821&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题1</a></td>
-<td align="right"></td>
+<td align="right">排序，数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E5%AD%97%E8%8A%8219.jpg" alt="19"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/1aeba6ba677949249aba82d81edc3fea?tpId=90&tqId=30822&rp=3&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">编程题2</a></td>
-<td align="right"></td>
+<td align="right">数组，贪心，分治</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -1092,22 +1086,22 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A61.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/6e6ad6338289498da79b7afb60e823b3?tpId=90&tqId=30894&tPage=6&rp=6&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">字符串匹配</a></td>
-<td align="right"></td>
+<td align="right">字符串，穷举</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A62.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/fe8d6a1b88af4ba6b4dbb10972059040?tpId=90&tqId=30897&rp=6&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">完成括号匹配</a></td>
-<td align="right"></td>
+<td align="right">栈，字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A63.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/d7ae059c1cee491989412c4fa39d4384?tpId=90&tqId=30899&tPage=7&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">字符覆盖</a></td>
-<td align="right"></td>
+<td align="right">字符串，排序</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A64.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/17ba5b5df1fc49ca8d6cf8ea407b1972?tpId=90&tqId=30901&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">最大子序列</a></td>
-<td align="right"></td>
+<td align="right">字符串，贪心</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%99%BE%E5%BA%A65.jpg" alt="5"></td>
@@ -1132,42 +1126,42 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B41.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/097ab63cffa847d89716f2ca8c23524f?tpId=90&tqId=30914&tPage=7&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">整数无序数组求第k大数</a></td>
-<td align="right"></td>
+<td align="right">排序，查找，堆</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B42.jpg" alt="2"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/5a93963ecd2444a29c3e078e0a0c8796?tpId=90&tqId=30915&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">给定整数序列求连续子序列最大和</a></td>
-<td align="right"></td>
+<td align="right">贪心，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B43.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/cff52ae345a248ea94c8c0cc2d278474?tpId=90&tqId=30916&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">寻找丑数</a></td>
-<td align="right"></td>
+<td align="right">穷举，数学，查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B44.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/7cffea0c097c4337821ab3ba25447c1c?tpId=90&tqId=30917&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">xor</a></td>
-<td align="right"></td>
+<td align="right">贪心，hash</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B45.jpg" alt="5"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/2ee36922acfe4b26bb7cceb5fc9a89a2?tpId=90&tqId=30918&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">幂运算</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B46.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/1ecd3d9e09664cde94919b65ea06b47c?tpId=90&tqId=30919&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">几个岛</a></td>
-<td align="right"></td>
+<td align="right">图，数组</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B47.jpg" alt="7"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/5f76ce2a25744d96bb9797e03c523302?tpId=90&tqId=30920&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">最短字符编码</a></td>
-<td align="right"></td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E6%BB%B4%E6%BB%B48.jpg" alt="8"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/6d76dfaf92cf478b93b60dd277b94ffa?tpId=90&tqId=30921&rp=7&ru=/ta/2018test&qru=/ta/2018test/question-ranking" target="_blank" rel="noopener">CIRD去重</a></td>
-<td align="right"></td>
+<td align="right">字符串</td>
 </tr>
 <tr>
 <td align="center">公司</td>
@@ -1470,7 +1464,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共 2.5k 字</span>
+  <span class="post-count">全站共 2.8k 字</span>
 </div>
 
 
