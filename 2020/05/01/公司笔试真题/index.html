@@ -134,12 +134,12 @@
 
 
 
-<meta name="description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作     被3整除     安置路灯     迷路的牛牛     数对     矩形重叠     牛牛的闹钟     背包问题     俄罗斯方块     瞌睡     丰收     整理房间     表达式求值     塔     小易的字典     代价     访友     翻转翻转     买房     香槟塔">
+<meta name="description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 暴力，双排序，hash表    被3整除 数学    安置路灯 贪心，滑动窗口    迷路的牛牛 数学    数对 数学    矩形重叠 数学，线段树    牛牛的闹钟 排序+二分    背包问题 动态规划，回溯(中途相遇法)    俄罗斯方块 数组    瞌睡 滑动窗口    丰收 数组+二分查找    整理房间 枚举">
 <meta property="og:type" content="article">
 <meta property="og:title" content="公司笔试真题">
 <meta property="og:url" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/index.html">
 <meta property="og:site_name" content="poppy">
-<meta property="og:description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作     被3整除     安置路灯     迷路的牛牛     数对     矩形重叠     牛牛的闹钟     背包问题     俄罗斯方块     瞌睡     丰收     整理房间     表达式求值     塔     小易的字典     代价     访友     翻转翻转     买房     香槟塔">
+<meta property="og:description" content="题目描述 链接 分类    公司 网易 2019年    牛牛找工作 暴力，双排序，hash表    被3整除 数学    安置路灯 贪心，滑动窗口    迷路的牛牛 数学    数对 数学    矩形重叠 数学，线段树    牛牛的闹钟 排序+二分    背包问题 动态规划，回溯(中途相遇法)    俄罗斯方块 数组    瞌睡 滑动窗口    丰收 数组+二分查找    整理房间 枚举">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg">
@@ -189,8 +189,9 @@
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF4.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF5.jpg">
 <meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E8%85%BE%E8%AE%AF6.jpg">
+<meta property="og:image" content="https://canghaizanhua6.github.io/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E9%98%BF%E9%87%8C1.jpg">
 <meta property="article:published_time" content="2020-05-01T06:03:27.000Z">
-<meta property="article:modified_time" content="2020-05-01T07:40:59.432Z">
+<meta property="article:modified_time" content="2020-05-03T03:15:58.863Z">
 <meta property="article:author" content="yang qian">
 <meta property="article:tag" content="2019笔试真题">
 <meta name="twitter:card" content="summary">
@@ -521,7 +522,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  223
+                  288
                 </span>
               
 
@@ -575,77 +576,77 @@
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%931.jpg" alt="1"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/46e837a4ea9144f5ad2021658cb54c4d?tpId=98&tqId=32824&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">牛牛找工作</a></td>
-<td align="right"></td>
+<td align="right">暴力，双排序，hash表</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%932.jpg" alt="2"></td>
-<td align="left"><a href="https://www.nowcoder.com/practice/3a3577b9d3294fb7845b96a9cd2e099c?tpId=98&tqId=32826&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">被3整除</a></td>
-<td align="right"></td>
+<td align="left"><a href="https://www.nowcoder.com/practice/51dcb4eef6004f6f8f44d927463ad5e8?tpId=98&tqId=32825&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">被3整除</a></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%933.jpg" alt="3"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/3a3577b9d3294fb7845b96a9cd2e099c?tpId=98&tqId=32826&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">安置路灯</a></td>
-<td align="right"></td>
+<td align="right">贪心，滑动窗口</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%934.jpg" alt="4"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/fc72d3493d7e4be883e931d507352a4a?tpId=98&tqId=32827&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">迷路的牛牛</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%935.jpg" alt="5"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/bac5a2372e204b2ab04cc437db76dc4f?tpId=98&tqId=32828&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">数对</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%936.jpg" alt="6"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/a22dd98b3d224f2bb89142f8acc2fe57?tpId=98&tqId=32829&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">矩形重叠</a></td>
-<td align="right"></td>
+<td align="right">数学，线段树</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%937.jpg" alt="7"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/9173e83d1774462f81255a26feafd7c6?tpId=98&tqId=32830&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">牛牛的闹钟</a></td>
-<td align="right"></td>
+<td align="right">排序+二分</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%938.jpg" alt="8"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/bf877f837467488692be703735db84e6?tpId=98&tqId=32831&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">背包问题</a></td>
-<td align="right"></td>
+<td align="right">动态规划，回溯(中途相遇法)</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%939.jpg" alt="9"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/9407e24a70b04fedba4ab3bd3ae29704?tpId=98&tqId=32832&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">俄罗斯方块</a></td>
-<td align="right"></td>
+<td align="right">数组</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9310.jpg" alt="10"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/93f2c11daeaf45959bb47e7894047085?tpId=98&tqId=32833&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">瞌睡</a></td>
-<td align="right"></td>
+<td align="right">滑动窗口</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9311.jpg" alt="11"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/83b419c027fa490aa60669b0e7dc06a3?tpId=98&tqId=32834&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">丰收</a></td>
-<td align="right"></td>
+<td align="right">数组+二分查找</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9312.jpg" alt="12"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/c32f4c74446541a1ad2abbe54476681f?tpId=98&tqId=32835&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">整理房间</a></td>
-<td align="right"></td>
+<td align="right">枚举+数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9313.jpg" alt="13"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/3e483fe3c0bb447bb17ffb3eeeca78ba?tpId=98&tqId=32836&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">表达式求值</a></td>
-<td align="right"></td>
+<td align="right">数学，动态规划</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9314.jpg" alt="14"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=98&tqId=32837&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">塔</a></td>
-<td align="right"></td>
+<td align="right">排序</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9315.jpg" alt="15"></td>
 <td align="left"><a href="https://www.nowcoder.com/practice/12b1b8ef17e1441f86f322b250bff4c0?tpId=98&tqId=32838&rp=1&ru=/ta/2019test&qru=/ta/2019test/question-ranking" target="_blank" rel="noopener">小易的字典</a></td>
-<td align="right"></td>
+<td align="right">数学</td>
 </tr>
 <tr>
 <td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E7%BD%91%E6%98%9316.jpg" alt="16"></td>
@@ -835,7 +836,12 @@
 <tr>
 <td align="center">公司</td>
 <td align="left">阿里</td>
-<td align="right">2017</td>
+<td align="right">2018</td>
+</tr>
+<tr>
+<td align="center"><img src="/2020/05/01/%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/%E9%98%BF%E9%87%8C1.jpg" alt="1"></td>
+<td align="left"></td>
+<td align="right"></td>
 </tr>
 </tbody></table>
 
@@ -1002,7 +1008,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1024,7 +1030,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1118,7 +1124,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共 2.1k 字</span>
+  <span class="post-count">全站共 2.2k 字</span>
 </div>
 
 
