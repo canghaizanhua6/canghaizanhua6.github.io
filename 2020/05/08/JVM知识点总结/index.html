@@ -121,7 +121,7 @@
 
 
 
-  <meta name="keywords" content="," />
+  <meta name="keywords" content="JVM知识点总结," />
 
 
 
@@ -134,16 +134,16 @@
 
 
 
-<meta name="description" content="愿你在冷铁卷刃前  得以窥见天光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="poppy">
-<meta property="og:url" content="https://canghaizanhua6.github.io/tags/index.html">
+<meta name="description" content="内存结构  ① 程序计数器  ② 堆  ③ JVM 方法区  ④ JVM 栈  ⑤ 本地方法栈  ⑥ 直接内存  线程共享  : ①，②，③ 线程私有  : ④，⑤ 系统内存，不属于Java虚拟机范畴  : ⑥  内存溢出  ① 堆  ② JVM 栈&#x2F;本地方法栈  ③ JVM方法区  ④ 直接内存  ⑤ 元空间 垃圾回收判断对象死亡 ① 引用计数法 ② 可达性分析  含义 GC Root四种对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM知识点总结">
+<meta property="og:url" content="https://canghaizanhua6.github.io/2020/05/08/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="poppy">
-<meta property="og:description" content="愿你在冷铁卷刃前  得以窥见天光">
-<meta property="article:published_time" content="2020-04-27T16:40:44.000Z">
-<meta property="article:modified_time" content="2020-04-28T08:37:15.219Z">
+<meta property="og:description" content="内存结构  ① 程序计数器  ② 堆  ③ JVM 方法区  ④ JVM 栈  ⑤ 本地方法栈  ⑥ 直接内存  线程共享  : ①，②，③ 线程私有  : ④，⑤ 系统内存，不属于Java虚拟机范畴  : ⑥  内存溢出  ① 堆  ② JVM 栈&#x2F;本地方法栈  ③ JVM方法区  ④ 直接内存  ⑤ 元空间 垃圾回收判断对象死亡 ① 引用计数法 ② 可达性分析  含义 GC Root四种对象">
+<meta property="article:published_time" content="2020-05-08T11:52:58.000Z">
+<meta property="article:modified_time" content="2020-05-08T13:08:46.228Z">
 <meta property="article:author" content="yang qian">
-<meta property="article:tag" content="GitHub+Hexo">
+<meta property="article:tag" content="JVM知识点总结">
 <meta name="twitter:card" content="summary">
 
 
@@ -174,13 +174,13 @@
 
 
 
-  <link rel="canonical" href="https://canghaizanhua6.github.io/tags/"/>
+  <link rel="canonical" href="https://canghaizanhua6.github.io/2020/05/08/JVM知识点总结/"/>
 
 
 
 
 
-  <title>标签 | poppy</title>
+  <title>JVM知识点总结 | poppy</title>
   
 
 
@@ -357,40 +357,331 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://canghaizanhua6.github.io/2020/05/08/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yang qian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="poppy">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 7 个标签
+          <h1 class="post-title" itemprop="name headline">JVM知识点总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-08T19:52:58+08:00">
+                2020-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categoriespsot_asset_folder/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="url" rel="index">
+                    <span itemprop="name">知识点总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/05/08/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" class="leancloud_visitors" data-flag-title="JVM知识点总结">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  303
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/2019%E7%A7%8B%E6%8B%9B%E6%97%B6%E9%97%B4%E8%A1%A8/" style="font-size: 12px; color: #ccc">2019秋招时间表</a> <a href="/tags/2019%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/" style="font-size: 12px; color: #ccc">2019笔试真题</a> <a href="/tags/2020%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98/" style="font-size: 12px; color: #ccc">2020笔试真题</a> <a href="/tags/GitHub-Hexo/" style="font-size: 12px; color: #ccc">GitHub+Hexo</a> <a href="/tags/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" style="font-size: 12px; color: #ccc">JVM知识点总结</a> <a href="/tags/%E6%88%91%E7%9A%84next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" style="font-size: 12px; color: #ccc">我的next主题配置</a> <a href="/tags/%E7%AC%94%E8%AF%95%E9%A2%98%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1/" style="font-size: 12px; color: #ccc">笔试题分类统计</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <hr>
+<h1 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h1><p>  ① 程序计数器<br>  ② 堆<br>  ③ JVM 方法区<br>  ④ JVM 栈<br>  ⑤ 本地方法栈<br>  ⑥ 直接内存</p>
+<ul>
+<li><code>线程共享</code>  : <strong>①，②，③</strong></li>
+<li><code>线程私有</code>  : <strong>④，⑤</strong></li>
+<li><code>系统内存，不属于Java虚拟机范畴</code>  : <strong>⑥</strong></li>
+</ul>
+<h1 id="内存溢出"><a href="#内存溢出" class="headerlink" title="内存溢出"></a>内存溢出</h1><p>  ① 堆<br>  ② JVM 栈/本地方法栈<br>  ③ JVM方法区<br>  ④ 直接内存<br>  ⑤ 元空间</p>
+<h1 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h1><h2 id="判断对象死亡"><a href="#判断对象死亡" class="headerlink" title="判断对象死亡"></a>判断对象死亡</h2><p> ① 引用计数法<br> ② 可达性分析</p>
+<ul>
+<li>含义</li>
+<li>GC Root四种对象</li>
+</ul>
+<p> ③ 四种引用</p>
+<ul>
+<li>强引用</li>
+<li>软引用</li>
+<li>弱引用</li>
+<li>虚引用</li>
+</ul>
+<p> ④ finalize()</p>
+<h2 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h2><p> ① 标记清除<br> ② 标记整理<br> ③ 复制<br> ④ 分代回收算法</p>
+<h2 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h2><p> ① 新生代</p>
+<ul>
+<li>Serial</li>
+<li>ParNew</li>
+<li>Parallel Scavenge</li>
+</ul>
+<p> ② 老年代</p>
+<ul>
+<li>Serial Old</li>
+<li>Parallel Old</li>
+<li>CMS </li>
+</ul>
+<p> ③ G1 (<code>同时回收新生代和老年代对象</code>)</p>
+<h2 id="垃圾回收过程"><a href="#垃圾回收过程" class="headerlink" title="垃圾回收过程"></a>垃圾回收过程</h2><p> ① </p>
+<h1 id="类的字节码"><a href="#类的字节码" class="headerlink" title="类的字节码"></a>类的字节码</h1><p> ①字节码指令<br> ② 类加载</p>
+<ul>
+<li><p>加载</p>
+</li>
+<li><p>连接</p>
+<ul>
+<li>验证</li>
+<li>准备</li>
+<li>解析 </li>
+</ul>
+</li>
+<li><p>初始化</p>
+</li>
+<li><p>使用</p>
+</li>
+<li><p>卸载</p>
+</li>
+</ul>
+<p> ③ 类加载器</p>
+<ul>
+<li>启动类加载器</li>
+<li>扩展类加载器</li>
+<li>应用程序类加载器</li>
+<li>自定义类加载器</li>
+</ul>
+<h1 id="JVM-优化"><a href="#JVM-优化" class="headerlink" title="JVM 优化"></a>JVM 优化</h1><p>  ① 编译器优化 (<code>语法糖</code>)<br>  ② 运行期优化</p>
+<h1 id="内存调优"><a href="#内存调优" class="headerlink" title="内存调优"></a>内存调优</h1><p> ① 调优工具</p>
+<ul>
+<li>调优命令</li>
+<li>可视化工具</li>
+</ul>
+<p> ② 常见问题和解决<br> ③ 参考数据<br> ④ JVM 常见参数</p>
+<h1 id="内存模型"><a href="#内存模型" class="headerlink" title="内存模型"></a>内存模型</h1><p> ① volatile</p>
+<ul>
+<li>可见性</li>
+<li>有序性(禁止指令重排)</li>
+</ul>
+
       
     </div>
     
     
     
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">--------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读--------</div>
+    
+</div>
+
+      
+    </div>
+
+    <div>
+        
+            
+
+
+        
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    yang qian
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://canghaizanhua6.github.io/2020/05/08/JVM知识点总结/" title="JVM知识点总结">http://canghaizanhua6.github.io/2020/05/08/JVM知识点总结/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" rel="tag"><i class="fa fa-tag"></i> JVM知识点总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/03/%E7%AC%94%E8%AF%95%E9%A2%98%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1/" rel="next" title="笔试题分类统计">
+                <i class="fa fa-chevron-left"></i> 笔试题分类统计
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
@@ -430,8 +721,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -518,6 +818,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#内存结构"><span class="nav-number">1.</span> <span class="nav-text">内存结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存溢出"><span class="nav-number">2.</span> <span class="nav-text">内存溢出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#垃圾回收"><span class="nav-number">3.</span> <span class="nav-text">垃圾回收</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#判断对象死亡"><span class="nav-number">3.1.</span> <span class="nav-text">判断对象死亡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾收集算法"><span class="nav-number">3.2.</span> <span class="nav-text">垃圾收集算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾收集器"><span class="nav-number">3.3.</span> <span class="nav-text">垃圾收集器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收过程"><span class="nav-number">3.4.</span> <span class="nav-text">垃圾回收过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类的字节码"><span class="nav-number">4.</span> <span class="nav-text">类的字节码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM-优化"><span class="nav-number">5.</span> <span class="nav-text">JVM 优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存调优"><span class="nav-number">6.</span> <span class="nav-text">内存调优</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存模型"><span class="nav-number">7.</span> <span class="nav-text">内存模型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

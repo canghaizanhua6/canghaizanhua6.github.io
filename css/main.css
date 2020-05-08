@@ -1901,7 +1901,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dad4ff;
+  background: #cdd9ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3108,4 +3108,15 @@ body {
 }
 :active {
   cursor: url("/images/mouse.png"), auto !important;
+}
+.hider_title {
+  font-family: "Microsoft Yahei";
+  cursor: pointer;
+  color: #00f;
+}
+.close:after {
+  content: "▼";
+}
+.open:after {
+  content: "▲";
 }
