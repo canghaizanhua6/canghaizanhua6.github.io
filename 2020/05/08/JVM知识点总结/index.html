@@ -15,8 +15,8 @@
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 <script>
     (function () {
-        if ('poppy0106') {
-            if (prompt('请输入文章密码') !== 'poppy0106') {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("http://canghaizanhua6.github.io/"); // 这里替换成你的首页
@@ -134,14 +134,14 @@
 
 
 
-<meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta name="description" content="内存结构  ① 程序计数器  ② 堆  ③ JVM 方法区  ④ JVM 栈  ⑤ 本地方法栈  ⑥ 直接内存  线程共享  : ①，②，③ 线程私有  : ④，⑤ 系统内存，不属于Java虚拟机范畴  : ⑥  内存溢出  ① 堆  ② JVM 栈&#x2F;本地方法栈  ③ JVM方法区  ④ 直接内存  ⑤ 元空间 垃圾回收判断对象死亡 ① 引用计数法 ② 可达性分析  含义 GC Root四种对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JVM知识点总结">
 <meta property="og:url" content="https://canghaizanhua6.github.io/2020/05/08/JVM%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="poppy">
-<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:description" content="内存结构  ① 程序计数器  ② 堆  ③ JVM 方法区  ④ JVM 栈  ⑤ 本地方法栈  ⑥ 直接内存  线程共享  : ①，②，③ 线程私有  : ④，⑤ 系统内存，不属于Java虚拟机范畴  : ⑥  内存溢出  ① 堆  ② JVM 栈&#x2F;本地方法栈  ③ JVM方法区  ④ 直接内存  ⑤ 元空间 垃圾回收判断对象死亡 ① 引用计数法 ② 可达性分析  含义 GC Root四种对象">
 <meta property="article:published_time" content="2020-05-08T11:52:58.000Z">
-<meta property="article:modified_time" content="2020-08-18T15:51:03.939Z">
+<meta property="article:modified_time" content="2020-08-18T16:08:56.737Z">
 <meta property="article:author" content="yang qian">
 <meta property="article:tag" content="JVM知识点总结">
 <meta name="twitter:card" content="summary">
@@ -470,7 +470,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  6
+                  303
                 </span>
               
 
@@ -507,15 +507,80 @@
       
 
       
-        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">Hey, password is required here.</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="ed68958297575fda835b5f246541c6474d6e5b4f8767b343748c8646999a6cdf">7e8757dcfcbbb40610f6033fa5e7ec4af4b5779bb3fda09f35794c02d81c76c635e812500d78fbf4ffa4c4aa668812a0d212711cb194d05f423a544106870782502330ad0dc78638c8d1b9b5c5be26f67d9f60609080790b11d8ab217f1640b1a6d706cd1354cb8dfd01c92144462f6ac82078bf1eb5e3ec574d996b9ac43b0f5791eb1a50df00f6a84434206f97e28b46b36017b2f6bf2df1b812a34eb5da9d7bb40a97e1c97ffa3c864070cf362995b30c61dd525b1546a760644b9600ccb6dd9b746b390eca5ad8a6de9faeff4b60b58d5498deb0b9abf16ef647814ea015f4aa7157bc73ae995ce0266213c6571e48982a008202afa81611b6ce090e0ac19dbed412ff6d4b0b3ca40a35d9a40e43ec135e20f7c91b822576f2c45d4ce79fe930c099e5795d8e8ad2f03f329fe4831cebe641aeac4a9624c87a238955d719d62034957a458c2cffd0587e3d81b8a51c65f2e57287f2551520d372353597b99b58be610927b5f4da3aa4a1d73779bb13e6a68e0181edd86a6371afb61f1a24befe1e990cbc9e6165056aae19cee643f44dd63a681d1f4f20378eedc46ea493c006c5cb8a2ec0d846764a18408fb48d9a4884e14ee68d009f352c3986878373f18ec51f094e779f0d0c8da67ba2c699cfa42e6859549c085b9781b3328e885db45e5da3426f3e957670d1eea6d23890eef38968ca74cb5ee6c89cded1f4be2bd0e7851d9443548a332a967a2aae6cb7439e46fc7bedec20f7adcf0260b5af2f79b2933b0d48d6e74a80b11dff99b39274f065ce9bf1be1ed14da00a76706baf7c947fe023a8ae1d9b05f7af200e8913d95aaeca9e7da02e4438401597b57f34329cfb9f8e56fdb34e8b2e1e528eeed0b6e7fdef8a71db909b5a1d66f585f0a02492fb46b981d4966bf54477d5015ba24b222d4f619be7dd8c85a255c06de5e016e82a8b0d7c989ef420494d89e18daff0f4b2345ae9597ffd9e279a90398fa86f9e734fbb4ba3274e48d74c6b87294154bc063e6cc3254a94608307c7292c1d9d61da65dcdea02ade52d8f962c4d8ff5a066143dba64e4ca6c0abe8c71c693a2dcff53bf07732dc4f721e3edb078fc08f5faab66f24ea7c457167a4eea827db13e5bd659d0d153103694f09e39aebed821b9eab0cb8d7549d01fa2c3a2757de27dfe5e7742ee28bdd7b3e8d2ddf5f6d397be50d4547b4d593259b2c16f8a5a1805c62e974ecf2995c363485babc356aac1b5c8b5bb9d79b3e667dd4f2a994b3c2eb025daaa6b24ddda4d0a3795b9bc9cfbfc16cf24652ae81fd1afea647f5a936e604ab6cb28243d0d3ce55aae7640361ad7e722e401feeb78f8e7dc53840d6abc6cdc4b9a8e34d277a2ccec371ab3b18d4ebea8dfd0685bcda514703d57c468b85d2a05cd96a34ce2453e3dd7eff9d88daf599397dc76a082a439202164725e1ca34294d0e82ef679ae9aeed74dc7d7d99108f34c09f4712ac317fcef168bc276b23757412b14459503db56418c520fd4bfb051c6c13cf9b270609d35591552d5beaf733b03099999d61061a64acd5c6e8c5500f72c267901d202997a3eb5b364190056de8bb68906048e0098c5f12d1f196c98ca8403b44a441256543838be447c8b3d500bdb4c9d7385c39a2ffa1ecea2ffb3ae8f7af056bd56dd09b9c11456d16bb8db1a346ccea9a95b492fa5edb840299f57a9223545570138aafa35f3fd9c9c015f399708494b71e0d056ff4ca2b2cf7a7393eda10db833d5f784301c197cba83ecf8d79a3c490a3452da6e0a28d83a48c0fbd111a233791c45c856ecaf5eeefaf63a8de1c1d8630fdc4d7e1838f80efd0a8781cb14ca909fc3dece64732ddbc5ea38b29567d88fc4204882657b056720ed1aeaaf909b4f9836952a125906f07ee74bf01bf3f2b02e21cca4bfcf394ac66a93ce04db4a43967514e1bca332834e27ec0a780f08400c5b1cbb317a82c096a33de70f5d29532ed30e8b5ef79cfab4adbdd7124cfd8456d1eac5c2915bffdad1906ec8ef14b1205581c07cbd85be311573d42d625efffef43994fcbe427d659e9483f98a6aa65f6bff9c8ec8d6cdcbf8fb710e892471215f9171d4174485d97579730c73bc9f60439662cd97bf228f2ac65aef428633823d1383b99e664819f539d64b0f1a8da8f42a027e4ef6e3f18c9c5a56f7bd298ed889e2cc8b0e7eee3f13d55c5206d92211d5b0a672fd08141e95891ec3325e59fdee843d97bd72b82ef3792bb03d3b57bf80170eb7b56851d2559e5e7919027602a45b3ef196fc05d8ebf1189c2a5d18116fbea96e2b10ab7bd22f71cc969398796b6febd9fdc21e6e027d94378bf7b360ae1aebab49989903d80d79151f7e70685f8bcc21996b266ed7e7b450497ded781067680393d27458227052c2c907a5682e0925bcee2b8c8ac7e80a1e79b480b4a979b0eb7b05aa5f04696ed1bb00d80d34f1cba2f742e2a70a47e48d8e056c0380d32ee12ce0c469ececdd4df1a49ecc63d19bbc4d10c694e9328d4df79ca1af24bc968b94a57e4b5baffa25824b5ab2996a9ba080985556723f55b8e9b7bea2f02da8894c09ee00684fa857e5151c53e55770af99f0d517998c1691bebb62828fc3f3676bc788db09d293985e5110b988ced51a2082dd3d02f02237c7975501b00466b07680b12f13e5d5da16a6af318a157c093f835ba8ca3f60324b2abc9ab3a61cef9c6359a7e266d41efe40b59952fbe0a0d3a96700c98559bc6cfb2726514e3a15acc96894cce44614322e32f5fcec11f5f3421d7308235872eb77097a4be88b3fa8d364078ae81aaa364fce0a8dbba55b29ebf1bef8767a6ab187b783db3237bb3a5fadd2723e59168f3f4402e433267f86e5c96fd0822e3f909f2f2cc9dc06f2316181ea19be584dda12259747c0961bb756a913bc51bbaddf9d26752422759392424cec4dd7acfdd1534846e810d0b0b7cad39138553f817d64082d6ac6606065595b10eff02612f8826bfbda64df2ac0ea2b021cf74de66299e133f295a9564ee100bf9e698af3aab5202bc046fc88c4398190e855468e7af8909ccf35fe87716a33a6810de16581ab88552ce0a466929bc9f3c35ecbb6dea517ce4548933af4be820f0b148dbe4fbd4a81bc253cd62f194be59cf948aa7f9f9b71dadbbcb34b353ae6b7cd2209a4fa4c304a95fc60d5ba4987975b568d5d31bfdbf004b2eb3e8de90cf81fa96ce0c9f28e7f34d945f92fdd93079d7d01f7c0f76cd5f174e46a94359cd78a08e691f1adff5f663366157fcb69392cbf44e2bca21950215c478e7e7efa8707929182e7dbcd9fb4e551e457287dab56a5a699a25659da59db5ff264762f8e9a50b9355338532b17656bea40e2304f8cb29281aac76534b748a4e09cd72754b0c6d99064666b9a721bbf0416049c26357150a5cdbcb50000464c2f58d5db4f6864c4943cec5ee8441a8be5752f30e435c27f44c2dcd639a2f0436333aad95e0505c9b945112bb1e8c4e1ac2aa4dc6de151bcea9fed35075cec76da980258a4bd016f7e9357086656f3e85e5185eee22726b13a59fd4fd989ec54e0b34696f8894b4a49426dfc3692f11c88323c74e776a8cf7bcaf7f5a83a68c750cf25e0656cb104f941cf8f179563ae1d562c914ad783d8c4cc2805986ae6ee2b3773377f8f02373a15970dd5eb50d1bbd8299d688392f3f2df5c6446084ce07f3bd3322a89307932e7f2cb7bb076b60becaf3c5eedb03e93109dd208b242df0d60a9a33d54d65f8c412d91330cdcefa9df121fc0ad879cf478af36e6ba323b2409987420ccab0e6e38048746d3e44cbe2a88fb9f1842b0e9bfbe803980b7bf07f3dcf89f6154b44accbc8648617dbf3c63d769913c9355d5f925d8e334e67971aa124c770edf0df000ed0ee74dcb3c11b7f8c14b8c3afd506c9e7f4c9f9541cb6ad55141f8be02512885e86a9af81182d51ad185f3e0e02831419044a26c1233a7f2f2aabadff4eca0af833939f29ee9387fc8807167c79a4442c8cd98b350f755de10d7bb48870c6733824755ce7322da1b396cc60ca2dd0eac1b2b12d638a1aab047568634bc6b2b11a0718b876e43c641d206a0769ae34618da9869dfc7bcb0222d118223202f6f12f697fb509d8e5ecf8a1898be958d6112b0ce697923146ac2e91c1e48beda6a1f2f069aea410ac6488732f485c0ba4d3b23b487e43467d49e9070199d5f242b1f41fb801a4f3322cf3ab86b622a57aa50d43d78f6f887710e9ef076e74de37cd40b0be6f25750ecdd5f19decebe8bfcff24f94b501b7c080d8bd1d6b4fce40538ab62b8e46ce39675b94365b70fa373eeefdbd0e</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        <hr>
+<h1 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h1><p>  ① 程序计数器<br>  ② 堆<br>  ③ JVM 方法区<br>  ④ JVM 栈<br>  ⑤ 本地方法栈<br>  ⑥ 直接内存</p>
+<ul>
+<li><code>线程共享</code>  : <strong>①，②，③</strong></li>
+<li><code>线程私有</code>  : <strong>④，⑤</strong></li>
+<li><code>系统内存，不属于Java虚拟机范畴</code>  : <strong>⑥</strong></li>
+</ul>
+<h1 id="内存溢出"><a href="#内存溢出" class="headerlink" title="内存溢出"></a>内存溢出</h1><p>  ① 堆<br>  ② JVM 栈/本地方法栈<br>  ③ JVM方法区<br>  ④ 直接内存<br>  ⑤ 元空间</p>
+<h1 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h1><h2 id="判断对象死亡"><a href="#判断对象死亡" class="headerlink" title="判断对象死亡"></a>判断对象死亡</h2><p> ① 引用计数法<br> ② 可达性分析</p>
+<ul>
+<li>含义</li>
+<li>GC Root四种对象</li>
+</ul>
+<p> ③ 四种引用</p>
+<ul>
+<li>强引用</li>
+<li>软引用</li>
+<li>弱引用</li>
+<li>虚引用</li>
+</ul>
+<p> ④ finalize()</p>
+<h2 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h2><p> ① 标记清除<br> ② 标记整理<br> ③ 复制<br> ④ 分代回收算法</p>
+<h2 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h2><p> ① 新生代</p>
+<ul>
+<li>Serial</li>
+<li>ParNew</li>
+<li>Parallel Scavenge</li>
+</ul>
+<p> ② 老年代</p>
+<ul>
+<li>Serial Old</li>
+<li>Parallel Old</li>
+<li>CMS </li>
+</ul>
+<p> ③ G1 (<code>同时回收新生代和老年代对象</code>)</p>
+<h2 id="垃圾回收过程"><a href="#垃圾回收过程" class="headerlink" title="垃圾回收过程"></a>垃圾回收过程</h2><p> ① </p>
+<h1 id="类的字节码"><a href="#类的字节码" class="headerlink" title="类的字节码"></a>类的字节码</h1><p> ①字节码指令<br> ② 类加载</p>
+<ul>
+<li><p>加载</p>
+</li>
+<li><p>连接</p>
+<ul>
+<li>验证</li>
+<li>准备</li>
+<li>解析 </li>
+</ul>
+</li>
+<li><p>初始化</p>
+</li>
+<li><p>使用</p>
+</li>
+<li><p>卸载</p>
+</li>
+</ul>
+<p> ③ 类加载器</p>
+<ul>
+<li>启动类加载器</li>
+<li>扩展类加载器</li>
+<li>应用程序类加载器</li>
+<li>自定义类加载器</li>
+</ul>
+<h1 id="JVM-优化"><a href="#JVM-优化" class="headerlink" title="JVM 优化"></a>JVM 优化</h1><p>  ① 编译器优化 (<code>语法糖</code>)<br>  ② 运行期优化</p>
+<h1 id="内存调优"><a href="#内存调优" class="headerlink" title="内存调优"></a>内存调优</h1><p> ① 调优工具</p>
+<ul>
+<li>调优命令</li>
+<li>可视化工具</li>
+</ul>
+<p> ② 常见问题和解决<br> ③ 参考数据<br> ④ JVM 常见参数</p>
+<h1 id="内存模型"><a href="#内存模型" class="headerlink" title="内存模型"></a>内存模型</h1><p> ① volatile</p>
+<ul>
+<li>可见性</li>
+<li>有序性(禁止指令重排)</li>
+</ul>
+
       
     </div>
     
@@ -659,8 +724,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -748,6 +822,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#内存结构"><span class="nav-number">1.</span> <span class="nav-text">内存结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存溢出"><span class="nav-number">2.</span> <span class="nav-text">内存溢出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#垃圾回收"><span class="nav-number">3.</span> <span class="nav-text">垃圾回收</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#判断对象死亡"><span class="nav-number">3.1.</span> <span class="nav-text">判断对象死亡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾收集算法"><span class="nav-number">3.2.</span> <span class="nav-text">垃圾收集算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾收集器"><span class="nav-number">3.3.</span> <span class="nav-text">垃圾收集器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收过程"><span class="nav-number">3.4.</span> <span class="nav-text">垃圾回收过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类的字节码"><span class="nav-number">4.</span> <span class="nav-text">类的字节码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM-优化"><span class="nav-number">5.</span> <span class="nav-text">JVM 优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存调优"><span class="nav-number">6.</span> <span class="nav-text">内存调优</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内存模型"><span class="nav-number">7.</span> <span class="nav-text">内存模型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -774,7 +864,7 @@
     //var toc=$('.post-toc-wrap')
     var toc=$('.nav')
     function password() {
-        if('poppy0106'){
+        if(''){
             //将文章内容删除
             div.remove();
             //将目录删除
@@ -815,8 +905,8 @@
             $(document).keyup(function(event){
                 if(event.keyCode ==13&&$('.password').length>0){
                     //console.log($('.password').val())
-                    //console.log('poppy0106')
-                    if ($('.password').val() == 'poppy0106') {
+                    //console.log('')
+                    if ($('.password').val() == '') {
                         //恢复文章内容
                         (div).appendTo($(".post-header"))
                         //恢复目录
@@ -883,7 +973,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共 45.1k 字</span>
+  <span class="post-count">全站共 45.4k 字</span>
 </div>
 
 
